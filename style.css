@@ -1,0 +1,99 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #FFFFFF;
+    background: rgb(67, 56, 159);
+    background: linear-gradient(45deg, rgba(67, 56, 159, 1) 0%, rgba(78, 198, 202, 1) 100%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.big {
+    font-family: "Courier New", "Courier", sans-serif;
+    font-size: 90px;
+    position: relative;
+    top: 195px;
+    left: 0px;
+    font-weight: 700;
+}
+
+.small {
+    font-family: "Courier New", "Courier", sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    position: relative;
+    top: 220px;
+    left: 0px;
+}
+
+.cem {
+    position: relative;
+    top: 35px;
+}
+
+.um {
+    background: #FFFFFF;
+    height: 100px;
+    width: 24px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 19px -7px #000000;
+}
+
+.um::before {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    height: 22px;
+    width: 45px;
+    border-radius: 4px;
+    position: relative;
+    left: -29px;
+    top: 10px;
+    z-index: -1;
+    transform: rotate(-40deg);
+    box-shadow: inset 0px 0px 10px -7px #000000;
+}
+
+.zero {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    right: -20px;
+    top: -100px;
+    border: solid 26px white;
+    border-radius: 50%;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+    z-index: -1;
+}
+
+.zerozero {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    right: -110px;
+    top: -198px;
+    border: solid 26px white;
+    border-radius: 50%;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+    z-index: -2;
+}
