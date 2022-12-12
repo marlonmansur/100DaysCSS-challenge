@@ -1,0 +1,97 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #3FAF82;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stripe {
+    cursor: pointer;
+    width: 80px;
+    height: 8px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px -3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    width: 100px;
+    height: 52px;
+    cursor: pointer;
+
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.mid {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+}
+
+.bot {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ * .stripe {
+    transition: top 0.3s ease-in-out, width 0.3s ease-in-out, left 0.3s ease-in-out, transform 0.3s ease-in-out 0.4s;
+}
+
+#check:not(:checked) ~ * .stripe{
+	transition: transform 0.3s ease-in-out, left 0.3s ease-in-out 0.4s, width 0.3s ease-in-out 0.4s, top 0.3s ease-in-out 0.4s;
+}
+
+#check:checked ~ * .mid{
+	position:absolute;
+	top:20px;
+	left:10px;
+	
+	width:0px;
+	left:50px;
+}
+
+#check:checked ~ * .top{
+	position:absolute;
+	top:20px;
+	left:10px;
+	
+	transform: rotate(45deg);
+}
+
+#check:checked ~ * .bot{
+	position:absolute;
+	top:20px;
+	left:10px;
+	
+	transform: rotate(135deg);
+}
