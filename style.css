@@ -1,0 +1,162 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 5px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42A7A1;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.card {
+  position: absolute;
+  width: 280px;
+  height: 220px;
+  top: 90px;
+  left: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+
+header {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: #F1BA64;
+  color: #fff; }
+
+.big-left {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.small-left {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 11px; }
+
+.small-right {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 11px; }
+
+.big-right {
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.parameters {
+  width: 280px;
+  height: 19px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  text-align: right; }
+
+.red,
+.blue {
+  padding: 0 10px 0 25px;
+  position: relative;
+  font-size: 9px;
+  color: #606060;
+  line-height: 13px; }
+
+.red::before {
+  background: #FA7373;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 3px;
+  border-radius: 3px; }
+
+.blue::before {
+  background: #7BA2FF;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 3px;
+  border-radius: 3px; }
+
+.line-box {
+  position: relative;
+  height: 81px;
+  width: 260px;
+  margin: 0 auto; }
+
+.linha1,
+.linha2,
+.linha3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #F2F2F2; }
+
+.linha1 {
+  top: 0; }
+
+.linha2 {
+  top: 40px; }
+
+.linha3 {
+  bottom: 0; }
+
+.data-red polyline {
+  stroke: #FA7373;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round; }
+
+.data-red svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.data-blue polyline {
+  stroke: #7BA2FF;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round; }
+
+.data-blue svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+:not(svg) {
+  transform-origin: 0px 0px; }
+
+.point-1 {
+  left: 7px;
+  top: 43px; }
+
+/*# sourceMappingURL=style.css.map */
